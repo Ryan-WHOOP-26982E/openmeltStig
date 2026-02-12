@@ -1,0 +1,3 @@
+[submodule "firmware/openmelt2"]
+	path = firmware/openmelt2
+	url = https://github.com/nothinglabs/openmelt2.git
