@@ -1,5 +1,6 @@
 //See melty_config.h for configuration parameters
 
+#include <Arduino.h>
 #include "rc_handler.h"
 #include "melty_config.h"
 #include "motor_driver.h"
@@ -12,6 +13,12 @@
 #ifdef ENABLE_WATCHDOG
 #include <Adafruit_SleepyDog.h>
 #endif
+
+static void echo_diagnostics();
+static void display_rpm_if_requested();
+static void check_config_mode();
+static void handle_bot_idle();
+static void wait_for_rc_good_and_zero_throttle();
 
 void service_watchdog() {
 #ifdef ENABLE_WATCHDOG
