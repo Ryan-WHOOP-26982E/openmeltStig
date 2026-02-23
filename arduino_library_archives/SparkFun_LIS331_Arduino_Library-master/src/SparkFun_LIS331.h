@@ -1,11 +1,7 @@
 #ifndef __sparkfun_lis331_h__
 #define __sparkfun_lis331_h__
 
-<<<<<<< HEAD
-#include <stdint.h>
-=======
 #include <Arduino.h>
->>>>>>> 25142a7 (Fix Arduino includes and VSCode IntelliSense setup)
 
 #define CTRL_REG1        0x20
 #define CTRL_REG2        0x21
@@ -82,8 +78,4 @@ class LIS331
   void LIS331_write(uint8_t address, uint8_t *data, uint8_t len);
 };
 
-<<<<<<< HEAD
 #endif
-=======
-#endif
->>>>>>> 25142a7 (Fix Arduino includes and VSCode IntelliSense setup)

@@ -1,10 +1,6 @@
 #include "SparkFun_LIS331.h"
 #include <SPI.h>
 #include <Wire.h>
-<<<<<<< HEAD
-#include <stdint.h>
-=======
->>>>>>> 25142a7 (Fix Arduino includes and VSCode IntelliSense setup)
 
 LIS331::LIS331(void)
 {
